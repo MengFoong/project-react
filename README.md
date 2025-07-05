@@ -25,17 +25,26 @@ A clean, accessible Login & Registration page built with React, TypeScript, Reac
 - Yarn or npm  
 
 ### project Structure
-src/
-├── components/       # Reusable UI components (TextInput)
-├── pages/            # Page components (LoginPage, RegisterPage)
-├── validation/       # Zod schemas for form validation
-├── App.tsx           # Main app component with routing
-├── index.tsx         # App entry point
-├── App.css           # Global styles & variables
-├── components/TextInput.css
-├── pages/LoginPage.css
-├── pages/RegisterPage.css
 
+```plaintext
+src/
+├── components/               # Reusable UI components (TextInput)
+│   └── TextInput.tsx
+│   └── TextInput.css
+├── pages/                    # Page components (LoginPage, RegisterPage)
+│   └── LoginPage.tsx
+│   └── LoginPage.css
+│   └── RegisterPage.tsx
+│   └── RegisterPage.css
+├── validation/               # Zod schemas for form validation
+│   └── schemas.ts
+├── App.tsx                   # Main app component with routing
+├── App.css                   # Global styles & variables
+├── index.tsx                 # App entry point
+├── screenshot/               # Screenshots for submission
+│   └── Screenshot-Login.png
+│   └── Screenshot-Register.png
+```
 ### Installation
 
 1. Clone the repo
@@ -45,11 +54,13 @@ src/
    cd project-react
 
 2. Install dependencies
-    
+
+    ```bash
     yarn install
 
 3. Start development server on port 3333, then fo to http://localhost:3333
- 
+
+    ```bash
     yarn start
 
 ## Screenshots
@@ -57,6 +68,8 @@ src/
 ### Login Page
 
 ![Login Page Screenshot](src/screenshot/Screenshot-Login.png)
+
+### Register Page
 ![Register Page Screenshot ](src/screenshot/Screenshot-Register.png)
 
 
